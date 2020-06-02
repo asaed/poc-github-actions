@@ -44,4 +44,4 @@ jobs:
         with:
           name: github-actions-poc
           template: deploy/cloudformation.template.yml
-          
+          no-fail-on-empty-changeset: "1"
