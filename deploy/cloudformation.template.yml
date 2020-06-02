@@ -1,0 +1,10 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Resources:
+  S3Bucket:
+    Type: AWS::S3::Bucket
+    Properties:
+      BucketName: asaed-github-actions-poc
+Outputs:
+  S3BucketArn:
+    Value: !GetAtt [S3Bucket, Arn]
+    Description: Arn for s3 bucket
